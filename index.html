@@ -18,13 +18,14 @@
             margin-left: 10px;
         }
 
-        .ukuranBtn {
+        button {
             height: 80px;
             width: 80px;
         }
 
         .ukuranDisplay {
             width: 50%;
+            height: 80px;
         }
     </style>
 </head>
@@ -38,53 +39,43 @@
 
     <div class="row">
         <div class="col-md-12 text-center">
-            <button onclick="document.getElementById('result').value+=7" type="button" class="btn btn-light ukuranBtn"
-                id="7">7</button>
-            <button onclick="document.getElementById('result').value+=8" type="button" class="btn btn-light ukuranBtn"
-                id="8">8</button>
-            <button onclick="document.getElementById('result').value+=9" type="button" class="btn btn-light ukuranBtn"
-                id="9">9</button>
-            <button onclick="document.getElementById('result').value+='/'" type="button" class="btn btn-light ukuranBtn"
-                id="/">/</button>
+            <button onclick="document.getElementById('result').value+=7" type="button" class="btn btn-light">7</button>
+            <button onclick="document.getElementById('result').value+=8" type="button" class="btn btn-light">8</button>
+            <button onclick="document.getElementById('result').value+=9" type="button" class="btn btn-light">9</button>
+            <button onclick="document.getElementById('result').value+='/'" type="button"
+                class="btn btn-light">/</button>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 text-center">
-            <button onclick="document.getElementById('result').value+=4" type="button" class="btn btn-light ukuranBtn"
-                id="4">4</button>
-            <button onclick="document.getElementById('result').value+=5" type="button" class="btn btn-light ukuranBtn"
-                id="5">5</button>
-            <button onclick="document.getElementById('result').value+=6" type="button" class="btn btn-light ukuranBtn"
-                id="6">6</button>
-            <button onclick="document.getElementById('result').value+='*'" type="button" class="btn btn-light ukuranBtn"
-                id="*">*</button>
+            <button onclick="document.getElementById('result').value+=4" type="button" class="btn btn-light">4</button>
+            <button onclick="document.getElementById('result').value+=5" type="button" class="btn btn-light">5</button>
+            <button onclick="document.getElementById('result').value+=6" type="button" class="btn btn-light">6</button>
+            <button onclick="document.getElementById('result').value+='*'" type="button"
+                class="btn btn-light">*</button>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 text-center">
-            <button onclick="document.getElementById('result').value+=1" type="button" class="btn btn-light ukuranBtn"
-                id="1" value="1">1</button>
-            <button onclick="document.getElementById('result').value+=2" type="button" class="btn btn-light ukuranBtn"
-                id="2">2</button>
-            <button onclick="document.getElementById('result').value+=3" type="button" class="btn btn-light ukuranBtn"
-                id="3">3</button>
-            <button onclick="document.getElementById('result').value+='-'" type="button" class="btn btn-light ukuranBtn"
-                id="-">-</button>
+            <button onclick="document.getElementById('result').value+=1" type="button" class="btn btn-light">1</button>
+            <button onclick="document.getElementById('result').value+=2" type="button" class="btn btn-light">2</button>
+            <button onclick="document.getElementById('result').value+=3" type="button" class="btn btn-light">3</button>
+            <button onclick="document.getElementById('result').value+='-'" type="button"
+                class="btn btn-light">-</button>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 text-center">
-            <button onclick="document.getElementById('result').value=''" type="button" class="btn btn-light ukuranBtn"
-                id=".">CLEAR</button>
-            <button onclick="document.getElementById('result').value+=0" type="button" class="btn btn-light ukuranBtn"
-                id="0">0</button>
-            <button onclick="document.getElementById('result')" type="button" class="btn btn-light ukuranBtn"
+            <button onclick="document.getElementById('result').value=''" type="button"
+                class="btn btn-light">CLEAR</button>
+            <button onclick="document.getElementById('result').value+=0" type="button" class="btn btn-light">0</button>
+            <button onclick="document.getElementById('result')" type="button" class="btn btn-light"
                 id="getResult">=</button>
-            <button onclick="document.getElementById('result').value+='+'" type="button" class="btn btn-light ukuranBtn"
-                id="+">+</button>
+            <button onclick="document.getElementById('result').value+='+'" type="button"
+                class="btn btn-light">+</button>
         </div>
     </div>
 
