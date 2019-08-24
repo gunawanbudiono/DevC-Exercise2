@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Exercise 2</title>
+    <title>Gunawan DevC 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: #949494;
+            margin-top: 100px;
+
+        }
+
+        button {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .ukuranBtn {
+            height: 80px;
+            width: 80px;
+        }
+
+        .ukuranDisplay {
+            width: 50%;
+        }
+    </style>
 </head>
+
 <body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
+
+    <div class="col-md-4 offset-md-5">
+        <input type="text" id="result" class="form-control form-control-lg ukuranDisplay" readonly value="">
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button onclick="document.getElementById('result').value+=7" type="button" class="btn btn-light ukuranBtn"
+                id="7">7</button>
+            <button onclick="document.getElementById('result').value+=8" type="button" class="btn btn-light ukuranBtn"
+                id="8">8</button>
+            <button onclick="document.getElementById('result').value+=9" type="button" class="btn btn-light ukuranBtn"
+                id="9">9</button>
+            <button onclick="document.getElementById('result').value+='/'" type="button" class="btn btn-light ukuranBtn"
+                id="/">/</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button onclick="document.getElementById('result').value+=4" type="button" class="btn btn-light ukuranBtn"
+                id="4">4</button>
+            <button onclick="document.getElementById('result').value+=5" type="button" class="btn btn-light ukuranBtn"
+                id="5">5</button>
+            <button onclick="document.getElementById('result').value+=6" type="button" class="btn btn-light ukuranBtn"
+                id="6">6</button>
+            <button onclick="document.getElementById('result').value+='*'" type="button" class="btn btn-light ukuranBtn"
+                id="*">*</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button onclick="document.getElementById('result').value+=1" type="button" class="btn btn-light ukuranBtn"
+                id="1" value="1">1</button>
+            <button onclick="document.getElementById('result').value+=2" type="button" class="btn btn-light ukuranBtn"
+                id="2">2</button>
+            <button onclick="document.getElementById('result').value+=3" type="button" class="btn btn-light ukuranBtn"
+                id="3">3</button>
+            <button onclick="document.getElementById('result').value+='-'" type="button" class="btn btn-light ukuranBtn"
+                id="-">-</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button onclick="document.getElementById('result').value=''" type="button" class="btn btn-light ukuranBtn"
+                id=".">CLEAR</button>
+            <button onclick="document.getElementById('result').value+=0" type="button" class="btn btn-light ukuranBtn"
+                id="0">0</button>
+            <button onclick="document.getElementById('result')" type="button" class="btn btn-light ukuranBtn"
+                id="getResult">=</button>
+            <button onclick="document.getElementById('result').value+='+'" type="button" class="btn btn-light ukuranBtn"
+                id="+">+</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('getResult').addEventListener('click', function (e) {
+
+            var a = document.getElementById("result").value;
+
+            var hasil = eval(a);
+            document.getElementById('result').value = hasil
+        })
+    </script>
+
 </body>
+
 </html>
